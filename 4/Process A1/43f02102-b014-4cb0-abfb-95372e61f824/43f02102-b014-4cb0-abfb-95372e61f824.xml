@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Component xmlns:ns2="http://www.boomi.com/connector/annotation"
+xmlns:ns3="http://exacttarget.com/wsdl/partnerAPI"
+xmlns:ns4="urn:fault.partner.exacttarget.com"
+xmlns:ns5="http://schemas.boomi.com/sap/edi_dc40"
+xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/"
+deleted="false">
+  <Id>43f02102-b014-4cb0-abfb-95372e61f824</Id>
+  <Type>process</Type>
+  <Name>Process A1</Name>
+  <Version>2</Version>
+  <FolderId name="Boomi_SunnyBansal/CICD Test">3268786</FolderId>
+  <AccountId>boomi_sunnybansal-J8CYW9</AccountId>
+  <Properties>
+    <Property>
+      <Name>overrides-enabled</Name>
+      <Value>false</Value>
+    </Property>
+    <Property>
+      <Name>startshape-type</Name>
+      <Value>NOACTION</Value>
+    </Property>
+  </Properties>
+  <References />
+  <Description />
+  <Object>
+    <process allowSimultaneous="false" enableUserLog="false"
+    updateRunDates="true" processLogOnErrorOnly="false"
+    workload="general" purgeDataImmediately="false">
+      <shapes>
+        <shape name="shape1" userlabel="" image="start" x="96.0"
+        y="96.0" shapetype="start">
+          <configuration>
+            <noaction />
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2"
+            x="320.0" y="104.0">
+              <linesegment name="shape1.dragpoint1.lineseg1"
+              length="0" orient="horizontal" x="129.0" y="110.0" />
+              <linesegment name="shape1.dragpoint1.lineseg2"
+              length="0" orient="vertical" x="129.0" y="110.0" />
+              <linesegment name="shape1.dragpoint1.lineseg3"
+              length="103" orient="horizontal" x="129.0"
+              y="110.0" />
+              <linesegment name="shape1.dragpoint1.lineseg4"
+              length="0" orient="vertical" x="232.0" y="110.0" />
+              <linesegment name="shape1.dragpoint1.lineseg5"
+              length="88" orient="horizontal" x="232.0"
+              y="110.0" />
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape name="shape2" userlabel="" image="message_icon"
+        x="336.0" y="96.0" shapetype="message">
+          <configuration>
+            <message combined="false">
+              <msgTxt>Test Message</msgTxt>
+              <msgParameters />
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3"
+            x="544.0" y="104.0">
+              <linesegment name="shape2.dragpoint1.lineseg1"
+              length="0" orient="horizontal" x="369.0" y="110.0" />
+              <linesegment name="shape2.dragpoint1.lineseg2"
+              length="0" orient="vertical" x="369.0" y="110.0" />
+              <linesegment name="shape2.dragpoint1.lineseg3"
+              length="95" orient="horizontal" x="369.0"
+              y="110.0" />
+              <linesegment name="shape2.dragpoint1.lineseg4"
+              length="0" orient="vertical" x="464.0" y="110.0" />
+              <linesegment name="shape2.dragpoint1.lineseg5"
+              length="80" orient="horizontal" x="464.0"
+              y="110.0" />
+            </dragpoint>
+          </dragpoints>
+        </shape>
+        <shape name="shape3" userlabel="" image="stop_icon"
+        x="560.0" y="96.0" shapetype="stop">
+          <configuration>
+            <stop continue="true" />
+          </configuration>
+          <dragpoints />
+        </shape>
+      </shapes>
+    </process>
+  </Object>
+</Component>
